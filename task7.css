@@ -1,3 +1,6 @@
+* {
+  overflow-x: hidden;
+}
 .navbar {
   background-color: #000 !important;
   z-index: 1 !important;
@@ -38,6 +41,9 @@
   gap: 10% !important;
   margin-bottom: 15% !important;
 }
+#tour-dates {
+  padding-bottom: 20% !important;
+}
 #tour-dates i {
   color: rgb(173, 172, 172) !important;
 }
@@ -58,4 +64,32 @@
 }
 .buy-tickets__section {
   background-color: #fff;
+}
+.contact__info {
+  width: 50%;
+}
+.bottom-photo {
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  width: 100%;
+}
+.icons:hover {
+  color: #b0aeae !important;
+}
+.modal-header {
+  background-color: rgb(27, 152, 115) !important;
+}
+.pay-button {
+  background-color: rgb(27, 152, 115) !important;
+  border: none !important;
+}
+.pay-button:hover {
+  color: #000 !important;
+  background-color: #b0aeae !important;
+}
+.close-button:hover {
+  color: #000 !important;
+  background-color: #b0aeae !important;
 }

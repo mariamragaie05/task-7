@@ -40,10 +40,10 @@
               <a class="nav-link active" aria-current="page" href="#the-band">BAND</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">TOUR</a>
+              <a class="nav-link" href="#tour-dates">TOUR</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">CONTACT</a>
+              <a class="nav-link" href="#contact">CONTACT</a>
             </li>
             <li class="nav-item dropdown">
               <a
@@ -94,8 +94,8 @@
           </div>
         </div>
       </div>
-      <div id="the-band" class="d-flex flex-column align-items-center">
-        <p class="mt-5 fs-1">The Band</p>
+      <div id="the-band" class="d-flex flex-column align-items-center mt-5">
+        <p class="mt-5 fs-1">THE BAND</p>
         <i class="text-body-tertiary">We love music</i>
         <p class="m-3">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         <div class="d-flex justify-content-centre the-band__photos">
@@ -113,8 +113,8 @@
             </div>
         </div>
       </div>
-      <div id="tour-dates" class="d-flex flex-column align-items-center bg-black p-2 pb-5">
-        <p class="mt-5 fs-1 text-light">Tour Dates</p>
+      <div id="tour-dates" class="d-flex flex-column align-items-center bg-black p-2">
+        <p class="mt-5 fs-1 text-light">TOUR DATES</p>
         <i class="mb-3">Remember to book your tickets!</i>
         <div class="tour-dates__tickets row my-3">
             <div class="py-2 bg-light border border-secondary">September <span class="sold-out p-1">Sold Out</span></div>
@@ -127,20 +127,123 @@
                 <p class="buy-tickets__city"><b>New York</b></p>
                 <p class="buy-tickets__date text-secondary">Fri 27 Nov 2016</p>
                 <p class="buy-tickets__discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button type="button" class="btn btn-primary bg-black text-light" data-bs-toggle="modal" data-bs-target="#pop-up">
+                    Buy Tickets
+                  </button>
             </div>
             <div class="d-flex flex-column buy-tickets__section m-3 p-1">
                 <img src="https://www.w3schools.com/w3images/paris.jpg" alt="photo" class="img-fluid">
                 <p class="buy-tickets__city"><b>Paris</b></p>
                 <p class="buy-tickets__date text-secondary">Sat 28 Nov 2016</p>
                 <p class="buy-tickets__discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button type="button" class="btn btn-primary bg-black text-light" data-bs-toggle="modal" data-bs-target="#pop-up">
+                    Buy Tickets
+                  </button>
             </div>
             <div class="d-flex flex-column buy-tickets__section m-3 p-1">
                 <img src="https://www.w3schools.com/w3images/sanfran.jpg" alt="photo" class="img-fluid">
                 <p class="buy-tickets__city"><b>San Francisco</b></p>
                 <p class="buy-tickets__date text-secondary">Sun 29 Nov 2016</p>
                 <p class="buy-tickets__discription">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button type="button" class="btn btn-primary bg-black text-light" data-bs-toggle="modal" data-bs-target="#pop-up">
+                    Buy Tickets
+                  </button>
             </div>
         </div>
       </div>
+      <div id="contact" class="d-flex flex-column align-items-center mt-4 mb-5">
+        <p class="mt-5 fs-1">CONTACT</p>
+        <i class="text-secondary-emphasis mb-5">Fan? Drop a note!</i>
+        <div class="contact__bottom d-flex gap-5">
+            <div class="contact__info d-flex flex-column align-items-start pr-5">
+                <p class="d-flex align-items-center"><i class="m-1 fa-solid fa-location-dot"></i> Chicago,US</p>
+                <p class="d-flex align-items-center"><i class="m-1 fa-solid fa-phone"></i> Phone: +00 151515</p>
+                <p class="d-flex align-items-center"><i class="m-1 fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+            </div>
+            <div class="contact-info__form d-flex flex-column">
+                <div class="d-flex">
+                    <form class="name-email-inputs d-flex flex-column">
+                        <div class="d-flex">
+                        <input
+                        class=" m-2 w-50 contact__form-input"
+                        name="name"
+                        type="text"
+                        placeholder="Name"
+                        required
+                        />
+                        <input
+                        class="m-2 w-50 contact__form-input"
+                        name="email"
+                        type="email"
+                        placeholder="Email"
+                        required
+                        autocomplete="email"
+                        />
+                        </div>
+                        <input
+                        class="m-2 contact__form-input__message"
+                        name="subject"
+                        type="text"
+                        placeholder="Message"
+                        required
+                        />
+                        <button class="contact__form-submit bg-black text-light p-1 w-25 align-self-end" type="submit" >SEND</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+      </div>
+      <img
+      class="bottom-photo m-3 mt-5"
+      src="https://www.w3schools.com/w3images/map.jpg"
+      alt="photo"
+    />
+    <div id="social-media" class="d-flex flex-column align-items-center">
+        <p class="icons d-flex justify-content-center align-items-center gap-2 mt-5 fs-2 text-secondary">
+            <i class="fa-brands fa-square-facebook"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-square-snapchat"></i>
+            <i class="fa-brands fa-pinterest-p"></i>
+            <i class="fa-brands fa-twitter"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+        </p>
+        <p class="text-secondary">Powered by
+            <a
+              class="text-secondary"
+              target="_blank"
+              href="https://www.w3schools.com/w3css/default.asp"
+              >w3.css</a
+            ></p>
+    </div>
+  <!-- Modal -->
+  <div class="modal fade" id="pop-up" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header text-light d-flex justify-content-center">
+          <h1 class="modal-title fs-5 d-flex align-items-center" id="exampleModalLabel"><i class="fa-solid fa-suitcase m-1"></i>Tickets</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form>
+            <div class="d-flex flex-column">
+                <label for="ticket-amount"><p class="d-flex align-items-center"><i class="fa-solid fa-cart-shopping"></i> Tickets,$15 per person</p></label>
+                <input class="mb-3 lh-lg" name="tickets" type="number" placeholder="How many?" required />
+            </div>
+            <div class="d-flex flex-column"> 
+               <label for="email"><p class="d-flex align-items-center"><i class="fa-solid fa-user"></i> Send To</p></label>
+               <input class="mb-3 lh-lg" name="email" type="email" placeholder="Enter Email" required autocomplete="email" />
+            </div>
+            <button class="pay-button text-light p-1 w-100 lh-lg d-flex align-items-center justify-content-center" type="submit">PAY <i class="fa-solid fa-check"></i></button>
+          </form>
+        </div>
+        <div class="modal-footer d-flex justify-content-between align-items-center">
+            <button type="button" class="close-button btn btn-secondary bg-danger d-flex align-items-center justify-content-center border-0" data-bs-dismiss="modal">
+                Close <i class="fa-solid fa-xmark"></i>
+              </button>
+              <p>Need <a href="#pop-up">help?</a> </p>
+        </div>
+      </div>
+    </div>
+  </div>
   </body>
 </html>
