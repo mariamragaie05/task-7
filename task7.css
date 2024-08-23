@@ -1,5 +1,8 @@
 .navbar {
   background-color: #000 !important;
+  z-index: 1 !important;
+  position: fixed;
+  width: 100%;
 }
 .navbar .dropdown:hover .dropdown-menu {
   display: block;
@@ -33,5 +36,26 @@
 .the-band__photos {
   margin: 5% !important;
   gap: 10% !important;
-  margin-bottom: 20%;
+  margin-bottom: 15% !important;
+}
+#tour-dates i {
+  color: rgb(173, 172, 172) !important;
+}
+.tour-dates__tickets {
+  color: #827f7f;
+  width: 100%;
+}
+.sold-out {
+  color: #fff;
+  background-color: rgb(222, 55, 55);
+  margin-left: 2% !important;
+}
+.november__3 {
+  color: #fff;
+  background-color: #000;
+  border-radius: 50%;
+  margin-left: 80%;
+}
+.buy-tickets__section {
+  background-color: #fff;
 }
