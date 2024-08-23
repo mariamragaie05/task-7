@@ -7,13 +7,14 @@
   position: fixed;
   width: 100%;
 }
-.navbar .dropdown:hover .dropdown-menu {
-  display: block;
-  margin-top: 0;
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block !important;
+  margin-top: 0 !important;
   background-color: lightgray;
 }
 
-.navbar .dropdown-menu {
+.nav-item .dropdown-menu {
+  display: none;
   margin-top: 0;
 }
 .navbar-nav .nav-link {
