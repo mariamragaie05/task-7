@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./johndoe.css" />
+  </head>
+  <body>
+    <div id="body" class="flex-row h-screen">
+      <header
+        id="nav-bar"
+        class="w-32 h-full bg-[#2f2f2f] text-white flex flex-col"
+      >
+        <div class="flex-shrink-0 flex items-center">
+          <img
+            src="https://www.w3schools.com/w3images/avatar_smoke.jpg"
+            alt="photo"
+          />
+        </div>
+        <nav class="nav-bar__buttons">
+          <ul class="leading-10">
+            <li class="w-32">
+              <a
+                href="#"
+                class="block px-4 py-5 bg-gray-950 text-gray-50 hover:bg-gray-100 hover:text-gray-950 flex flex-col justify-center items-center text-xl"
+                ><i class="fa-solid fa-house-chimney p-2"></i>HOME</a
+              >
+            </li>
+            <li class="w-32">
+              <a
+                href="#about"
+                class="block px-4 py-5 hover:bg-gray-950 flex flex-col justify-center items-center text-xl"
+                ><i class="fa-solid fa-user p-2"></i>ABOUT</a
+              >
+            </li>
+            <li class="w-32">
+              <a
+                href="#my-photos"
+                class="block px-4 py-5 hover:bg-gray-950 flex flex-col justify-center items-center text-xl"
+                ><i class="fa-solid fa-eye p-2"></i>PHOTOS</a
+              >
+            </li>
+            <li class="w-32">
+              <a
+                href="#contact-me"
+                class="block px-4 py-5 hover:bg-gray-950 flex flex-col justify-center items-center text-xl"
+                ><i class="fa-solid fa-envelope p-2"></i>CONTACT</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <main id="rest-of-page" class="flex flex-col ml-40 mt-20">
+        <section
+          id="home"
+          class="flex flex-col justify-center items-center text-gray-50"
+        >
+          <p class="text-7xl">I'm John Doe.</p>
+          <p>Photographer and Web Designer</p>
+          <img
+            src="https://www.w3schools.com/w3images/man_smoke.jpg"
+            alt="photo"
+            class="mb-28"
+          />
+        </section>
+        <!-- about section -->
+        <section id="about" class="text-gray-50 mt-15">
+          <p class="text-4xl mb-3 line-under-text">My Name</p>
+          <p class="text-gray-500">
+            Some text about me. Some text about me. I am lorem ipsum consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+            exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit
+            esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+            cupidatat non proident, sunt in culpa qui officia deserunt mollit
+            anim id est laborum consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+            veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+            ea commodo consequat
+          </p>
+          <p class="text-3xl mt-10 mb-5">My Skills</p>
+          <div class="w-full max-w-md p-1">
+            <div class="relative pt-1">
+              <h2 class="text-lg mb-4 text-gray-500 tracking-widest">
+                Photography
+              </h2>
+              <div class="flex items-center justify-between"></div>
+              <div class="flex-1 h-7 bg-gray-300">
+                <div class="h-full bg-gray-500" style="width: 90%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full max-w-md p-1">
+            <div class="relative pt-1">
+              <h2 class="text-lg mb-4 text-gray-500 tracking-widest">
+                Web Design
+              </h2>
+              <div class="flex items-center justify-between"></div>
+              <div class="flex-1 h-7 bg-gray-300">
+                <div class="h-full bg-gray-500" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+          <div class="w-full max-w-md p-1">
+            <div class="relative pt-1">
+              <h2 class="text-lg mb-4 text-gray-500 tracking-widest">
+                Photoshop
+              </h2>
+              <div class="flex items-center justify-between"></div>
+              <div class="flex-1 h-7 bg-gray-300">
+                <div class="h-full bg-gray-500" style="width: 75%"></div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="flex items-center w-full max-w-md p-1 bg-gray-50 text-gray-950 mt-10"
+          >
+            <div
+              class="flex flex-col items-center justify-center h-28"
+              style="width: 25%"
+            >
+              <p class="text-2xl">11+</p>
+              <p class="text-md">Partners</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center h-28"
+              style="width: 25%"
+            >
+              <p class="text-2xl">55+</p>
+              <p class="text-md">Projects Done</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center h-28"
+              style="width: 25%"
+            >
+              <p class="text-2xl">89+</p>
+              <p class="text-md">Happy Clients</p>
+            </div>
+            <div
+              class="flex flex-col items-center justify-center h-28"
+              style="width: 25%"
+            >
+              <p class="text-2xl">150+</p>
+              <p class="text-md">Meetings</p>
+            </div>
+          </div>
+          <button
+            href="./johndoe.html"
+            class="bg-gray-50 text-gray-950 px-4 py-2 my-8 hover:bg-gray-300"
+          >
+            <i class="fa-solid fa-download"></i>Download Resume
+          </button>
+          <p class="text-3xl mt-3 mb-5">My Price</p>
+          <div class="flex gap-4 mb-12">
+            <div
+              class="flex flex-col opacity-50 hover:opacity-100 bg-gray-50 text-gray-950"
+              style="width: 50%"
+            >
+              <p
+                class="text-3xl h-28 bg-gray-500 w-full flex justify-center items-center border-b border-gray-300"
+              >
+                Basic
+              </p>
+              <p
+                class="text-lg h-12 flex justify-center items-center border-b border-gray-300"
+              >
+                Web Design
+              </p>
+              <p
+                class="text-lg h-12 flex justify-center items-center border-b border-gray-300"
+              >
+                Photography
+              </p>
+              <p
+                class="text-lg h-12 flex justify-center items-center border-b border-gray-300"
+              >
+                5GB Storage
+              </p>
+              <p
+                class="text-lg h-12 flex justify-center items-center border-b border-gray-300"
+              >
+                Mail Support
+              </p>
+              <div
+                class="text-lg h-36 flex flex-col justify-center items-center border-b border-gray-300"
+              >
+                <p class="text-3xl">$ 10</p>
+                <p>per month</p>
+              </div>
+              <div
+                class="text-lg h-24 bg-gray-200 w-full flex justify-center items-center"
+              >
+                <button
+                  class="p-2 bg-gray-50 text-gray-950 hover:bg-gray-950 hover:text-gray-50"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+            <div
+              class="flex flex-col opacity-50 hover:opacity-100 bg-gray-50 text-gray-950"
+              style="width: 50%"
+            >
+              <p
+                class="text-3xl h-28 bg-gray-500 w-full flex justify-center items-center border-b border-gray-300"
+              >
+                Pro
+              </p>
+              <p
+                class="text-lg h-12 flex justify-center items-center border-b border-gray-300"
+              >
+                Web Design
+              </p>
+              <p
+                class="text-lg h-12 flex justify-center items-center border-b border-gray-300"
+              >
+                Photography
+              </p>
+              <p
+                class="text-lg h-12 flex justify-center items-center border-b border-gray-300"
+              >
+                50GB Storage
+              </p>
+              <p
+                class="text-lg h-12 flex justify-center items-center border-b border-gray-300"
+              >
+                Endless Support
+              </p>
+              <div
+                class="text-lg h-36 flex flex-col justify-center items-center border-b border-gray-300"
+              >
+                <p class="text-3xl">$ 25</p>
+                <p>per month</p>
+              </div>
+              <div
+                class="text-lg h-24 bg-gray-200 w-full flex justify-center items-center"
+              >
+                <button
+                  class="p-2 bg-gray-50 text-gray-950 hover:bg-gray-950 hover:text-gray-50"
+                >
+                  Sign Up
+                </button>
+              </div>
+            </div>
+          </div>
+          <p class="text-3xl mt-3 mb-5">My Reputation</p>
+          <div class="flex items-center gap-4 my-8">
+            <img
+              src="https://www.w3schools.com/w3images/bandmember.jpg"
+              alt="chris-fox"
+              class="rounded-full h-24"
+            />
+            <div class="flex flex-col gap-3 text-gray-500">
+              <p>
+                <span class="text-lg">Chris Fox.</span> CEO at Mighty Schools
+              </p>
+              <p>John Doe saved us from a web disaster.</p>
+            </div>
+          </div>
+          <div class="flex items-center gap-4">
+            <img
+              src="https://www.w3schools.com/w3images/avatar_g2.jpg"
+              alt="rebecca-flex"
+              class="rounded-full h-24"
+            />
+            <div class="flex flex-col gap-3 text-gray-500">
+              <p><span class="text-lg">Rebecca Flex.</span> CEO at Company.</p>
+              <p>No one is better than John Doe.</p>
+            </div>
+          </div>
+        </section>
+        <!-- photos section -->
+        <section id="my-photos" class="text-gray-50 mt-32 mb-20">
+          <p class="text-4xl mb-3 line-under-text">My Photos</p>
+          <div class="flex mt-2">
+            <div class="flex flex-col" style="width: 50%">
+              <img
+                class="m-1"
+                src="https://www.w3schools.com/w3images/wedding.jpg"
+                alt="wedding"
+              />
+              <img
+                class="m-1"
+                src="https://www.w3schools.com/w3images/rocks.jpg"
+                alt="rocks"
+              />
+              <img
+                class="m-1"
+                src="https://www.w3schools.com/w3images/sailboat.jpg"
+                alt="sailboat"
+              />
+            </div>
+            <div class="flex flex-col" style="width: 50%">
+              <img
+                class="m-1"
+                src="https://www.w3schools.com/w3images/underwater.jpg"
+                alt="underwater"
+              />
+              <img
+                class="m-1"
+                src="https://www.w3schools.com/w3images/chef.jpg"
+                alt="chef"
+              />
+              <img
+                class="m-1"
+                src="https://www.w3schools.com/w3images/wedding.jpg"
+                alt="wedding"
+              />
+              <img
+                class="m-1"
+                src="https://www.w3schools.com/w3images/p6.jpg"
+                alt="typewriter"
+              />
+            </div>
+          </div>
+        </section>
+        <!-- contact section -->
+        <section id="contact-me" class="text-gray-50 mt-20">
+          <p class="text-4xl mb-3 line-under-text">Contact Me</p>
+          <div class="flex flex-col items-start pr-5 text-gray-400">
+            <p class="flex items-center text-lg">
+              <i class="mx-3 text-gray-50 fa-solid fa-location-dot"></i>
+              Chicago,US
+            </p>
+            <p class="flex items-center text-lg">
+              <i class="mx-3 text-gray-50 fa-solid fa-phone"></i> Phone: +00
+              151515
+            </p>
+            <p class="flex items-center text-lg mb-12">
+              <i class="mx-3 text-gray-50 fa-solid fa-envelope"></i> Email:
+              mail@mail.com
+            </p>
+            <p class="text-gray-400">Let's get in touch. Send me a message:</p>
+            <form>
+              <input
+                class="w-full max-w-md p-1 h-10 mb-2 mt-4"
+                name="name"
+                type="text"
+                placeholder="Name"
+                required
+              />
+              <input
+                class="w-full max-w-md p-1 h-10 my-2"
+                name="email"
+                type="email"
+                placeholder="Email"
+                required
+                autocomplete="email"
+              />
+              <input
+                class="w-full max-w-md p-1 h-10 my-2"
+                name="subject"
+                type="text"
+                placeholder="Subject"
+                required
+              />
+              <input
+                class="w-full max-w-md p-1 h-10 my-2"
+                name="message"
+                type="text"
+                placeholder="Message"
+                required
+              />
+              <button
+                class="bg-gray-50 text-gray-950 px-4 py-1.5 mt-3 mb-32 hover:bg-gray-300"
+                type="submit"
+              >
+                <i class="mr-2 fa-solid fa-paper-plane"></i>SEND MESSAGE
+              </button>
+              <p class="flex gap-2 text-2xl mb-4 text-gray-400">
+                <i class="fa-brands fa-square-facebook"></i>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-square-snapchat"></i>
+                <i class="fa-brands fa-pinterest-p"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+              </p>
+              <p class="text-gray-400 mb-24">
+                Powered by
+                <a
+                  class="text-gray-400 underline hover:text-green-600"
+                  target="_blank"
+                  href="https://www.w3schools.com/w3css/default.asp"
+                  >w3.css</a
+                >
+              </p>
+            </form>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,18 @@
+body {
+  background-color: #000;
+}
+#body {
+  display: flex !important;
+  gap: 20% !important;
+}
+#nav-bar {
+  position: fixed;
+}
+.nav-bar__buttons i {
+  font-size: xx-large;
+}
+.line-under-text {
+  border-bottom: 2px solid #fff !important;
+  padding-bottom: 5%;
+  width: 50%;
+}
